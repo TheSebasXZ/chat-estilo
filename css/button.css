@@ -1,0 +1,102 @@
+.enviar{
+    width: fit-content;
+    min-width: 20px;
+    height: 45px;
+    padding: 8px;
+
+    border-radius: 90px;
+    border: 2.5px solid rgb(94, 93, 93);
+    background-color: rgb(11, 168, 168);
+
+    cursor: pointer;
+
+    position: relative;
+    left: 98%;
+    top: 35px;
+    z-index: 99999;
+
+
+}
+  
+/* estilos y posicion contratar */
+.position{
+
+
+    position: absolute;
+    top: 10%;
+    right: 105%;
+  
+
+    z-index: 9999;
+
+   
+
+    
+}
+
+.borde{
+    border: 2px solid rgb(94, 0, 189);
+    background-color: rgb(163, 84, 236);
+    padding: 5px 5px;
+    border-radius: 90px;
+}
+
+/* estilos y posicion calificar */
+
+.position2{
+    position: absolute;
+    top: 24%;
+    right: 105%;
+
+
+   
+}
+
+.borde2{
+    border: 2px solid rgb(31, 59, 19);
+    background-color: rgb(40, 245, 67);
+    padding: 5px 5px;
+    border-radius: 90px;
+}
+
+/* estilos y posicion reportar */
+.position3{
+    position: absolute;
+    top: 23%;
+    right: 105%;
+
+
+    z-index: 9999;
+}
+
+.borde3{
+    border: 2px solid rgb(146, 22, 22);
+    background-color: rgb(245, 40, 40);
+    padding: 5px 5px;
+    border-radius: 90px;
+}
+/* estilos img iniciar */
+.position4{
+    position: absolute;
+    top: 54%;
+    right: 105%;
+}
+.borde4{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(40, 245, 211, 0.658);
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+
+/* finalizar , estilos */
+.position5{
+    position: absolute;
+    top: 68%;
+    right: 105%;
+}
+.borde5{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(28, 224, 110, 0.658);
+    padding: 5px 5px;
+    border-radius: 15px;
+}

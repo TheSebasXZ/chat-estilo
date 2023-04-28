@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script type="text/javascript">
+        function ajax() {
+            var req =new XMLHttpRequest();
+            req.onreadystatechange =function(){
+                if (req.readyState == 4 && req.status == 200) {
+                    document.getElementById('chat').innerHTML = req.responseText;
+                }
+            }
+            req.open('GET', 'chat.php', true);
+            req.send();
+        }
+        // la siguiente linea refresca la pagina cada segundo
+        setInterval(function(){ajax();}, 1000);
+    </script>
+    <title>CHAT</title>
+</head>
+    <body onload="ajax()">
+            <!-- Ahi perdone que no se mucho de css, usted ya hace eso -->
+            <!-- link del video donde vi el tutorial: https://www.youtube.com/watch?v=wMlLgYyz_ws -->
+
+       
+        <!-- contenedor para el chat -->
+        <div  id="contenedor">
+            <!-- inconos para contratar , reportar , calificar -->
+            <abbr title="CONTRATAR">
+                <a href="#" class="position">
+                    <img class="borde" src="img/contrato.png" width="40px" height="40px">
+                </a>
+            </abbr>
+            <!-- reportar -->
+            <abbr title="REPORTAR">
+                <a href="#" class="position3">
+                    <img class="borde3" src="img/reporte.png" width="40px" height="40px">
+                </a>
+            </abbr>
+            <!--  -->
+
+            <div id ="caja-chat">
+                <div id="chat"> </div>
+
+            </div>
+
+            
+            <form action="" met hod="post" action="index.php">
+                <input type="text" autocomplete="off" name="mensaje" class="input" >
+                <button class="enviar" type="submit" name="enviar" value="enviar">
+                    <img src="img/6496189.png" width="30px" height="30px">
+                </button>
+            </form>
+            
+            <!-- <?php
+                if (isset($_POST['enviar'])) {
+                    $nombre = $_POST['nombre'];
+                    $mensaje = $_POST['mensaje'];
+                    $consulta = "INSERT INTO tbl_chat (nombre, mensaje) VALUES ('$nombre', '$mensaje')";
+                    $ejecutar = $conexion->query($consulta);
+                    //  aqui ponia un sonido cuando envia el mensaje, cosa que no voy a hacer
+                }
+            ?> -->
+        </div>  
+             
+    </body>
+</html> 

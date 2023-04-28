@@ -1,0 +1,52 @@
+
+body{
+    background: #fff;
+}
+#contenedor{
+    position: relative;
+    top: 100px;
+    width: 30%;
+    background: #fff;
+    border: 3px solid teal;
+    margin:  auto;
+    padding: 50px;
+    border-radius: 12px;
+}
+#caja-chat{
+    width: 90%;
+    height: 260px;
+
+}
+#datos-chat{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid silver;
+    font-weight: bold;
+    /* aqui importaba la tipografia, pero me dio pereza */
+}
+.input {
+    position: relative;
+    right: 24px;
+    top: 78px;
+
+
+    width: 97%;
+    height: 40px;
+
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    
+    font-size: 17px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: white;
+    border: 2px solid rgb(56, 56, 56) ;
+    transform: scale(1.05);
+
+}
